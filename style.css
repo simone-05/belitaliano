@@ -1,0 +1,30 @@
+body {
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+hr {
+    margin: 8% 100px;
+    /* border-width: 2px; */
+}
+.sent {
+    display: inline-block;
+}
+.trans {
+    display: inline;
+    right: 45%;
+    position: absolute;
+}
+.trans_close{
+    display: inline;
+    right: 70%;
+    position: absolute;
+}
+.more_ex {
+    margin: 0 1.5%;
+    font-size: .85em;
+}
+.more_ex .trans {
+    right: 50%;
+}
+
