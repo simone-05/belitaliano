@@ -15,7 +15,7 @@ hr {
     right: 45%;
     position: absolute;
 }
-.trans_close{
+.trans_closer{
     display: inline;
     right: 70%;
     position: absolute;
@@ -28,7 +28,15 @@ hr {
     right: 50%;
 }
 
-
+/* if mobile */
 @media screen and (max-width: 768px) {
-    
+    .trans {
+        right: 5%;
+    }
+    .trans_closer {
+        right: 15%;
+    }
+    .more_ex .trans {
+        right: 10%;
+    }
 }
