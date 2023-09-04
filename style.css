@@ -10,6 +10,10 @@ hr {
 .sent {
     display: inline-block;
 }
+.sent_narrow{
+    display: inline-block;
+    margin: 0.3em 20px;
+}
 .trans {
     display: inline;
     right: 45%;
@@ -20,6 +24,12 @@ hr {
     right: 70%;
     position: absolute;
 }
+.trans_closer_narrow {
+    display: inline;
+    right: 70%;
+    position: absolute;
+    margin: 0.3em 20px;
+}
 .more_ex {
     margin: 0 1.5%;
     font-size: .85em;
@@ -28,15 +38,48 @@ hr {
     right: 50%;
 }
 
+pre {
+    font-family: sans-serif;
+}
+
+#scrollBottom, #scrollTop {
+  position: fixed; /* Fixed/sticky position */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: #000; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#scrollBottom {
+  bottom: 20px; /* Place the button at the bottom of the page */
+}
+
+#scrollTop {
+  top: 20px; /* Place the button at the bottom of the page */
+}
+
+#scrollBottom:hover, #scrollTop:hover{
+  background-color: #ccc; /* Add a dark-grey background on hover */
+  color: #000;
+}
+
+
+
+
 /* if mobile */
 @media screen and (max-width: 768px) {
-    .trans {
+    .trans, .trans_narrow {
         right: 5%;
     }
-    .trans_closer {
+    .trans_closer, .trans_closer_narrow {
         right: 15%;
     }
-    .more_ex .trans {
+    .more_ex .trans, .more_ex .trans_narrow {
         right: 10%;
     }
 }
