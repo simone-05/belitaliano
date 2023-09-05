@@ -74,7 +74,7 @@ pre {
 /* if mobile */
 @media screen and (max-width: 980px) {
     body {
-        font-size: 1.2em;
+        font-size: 2.2em;
     }
     .trans, .trans_narrow {
         right: 5%;
